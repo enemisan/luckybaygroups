@@ -50,17 +50,6 @@ body {
     padding: 50px 200px;
 }
 
-@media (max-width:1010px){
-    .banner{
-        padding: 50px 100px;
-    }
-}
-
-@media (max-width:811px){
-    .banner{
-        padding: 50px 30px;
-    }
-}
 
 header {
     width: 100%;
@@ -148,6 +137,78 @@ nav ul li a:hover {
     }
 } */
 
+@media (max-width: 1010px) {
+    .banner{
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 811px) {
+    .banner{
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .bannerText h1 {
+        font-size: 40px;
+    }
+    
+    .bannerText p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 620px) {
+    .bannerText h1 {
+        font-size: 30px;
+    }
+    
+    .bannerText p {
+        font-size: 12px;
+    }
+
+    nav ul{
+        gap: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .bannerText h1 {
+        font-size: 25px;
+    }
+    
+    .bannerText p {
+        font-size: 10px;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+    
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
 /* Overlapping Section */
 .overlappingSection--ctn {
     width: 100%;
@@ -231,6 +292,66 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
+@media (max-width: 1290px) {
+    .overlap {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .goldOverlap {
+        display: none;
+    }
+
+    .overlap--ctn {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (max-width: 680px) {
+    .overlap--ctn {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .usp {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 680px) {
+    .overlap--ctn {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .usp {
+        display: block;
+        text-align: center;
+    }
+
+    .usp-img {
+        margin-right: 0;
+    }
+
+    .usp-img i {
+        font-size: 50px;
+    }
+
+    .usp p {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -274,6 +395,39 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     background: rgb(193, 193, 193);
+}
+
+
+@media (max-width: 1130px) {
+    .ourprojects--img {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+
+    .op_img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .ourprojects--img {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 740px) {
+    .ourProjects--ctn h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 580px) {
+    .ourprojects--img { display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+    .ourProjects--ctn h1 {
+        font-size: 30px;
+    }
 }
 
 
