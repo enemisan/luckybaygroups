@@ -1,0 +1,509 @@
+/* Importing Fonts: Cormorant, Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quattrocento:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+Font Sizes
+60px
+30px
+15px
+*/
+
+:root {
+    --gold-darker: #a07b1b;
+    --gold-dark: #dead32;
+    --grey: #d8d8d8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: none;
+}
+
+a{
+    text-decoration: none;  
+    color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url("./assets/banner-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: black;
+    padding: 50px 200px;
+}
+
+@media (max-width:1010px){
+    .banner{
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width:811px){
+    .banner{
+        padding: 50px 30px;
+    }
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: var(--gold-dark);
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* Header horizontal line */
+.headerLine {
+    margin: 10px 0;
+    background-color: white;
+    height:1px;
+}
+
+/* Banner Text */
+.bannerText--ctn {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.bannerText h1 {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.bannerText p {
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+/* Banner Button */
+.bannerText button {
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    color: white;
+    background: var(--gold-dark);
+}
+
+.bannerText button:hover {
+    background: var(--gold-darker);
+}
+/* 
+@media (max-width: 1010px){
+    .bannerText--ctn {
+        justify-content: center;
+    }
+} */
+
+/* Overlapping Section */
+.overlappingSection--ctn {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.overlap {
+    width: 70%;
+    height: 300px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    z-index: 9;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.151);
+}
+
+.overlap--ctn {
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    place-items: center;
+}
+
+.usp {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.usp-img {
+    margin-right: 15px;
+}
+
+.usp-img i {
+    font-size: 30px;
+    color: var(--gold-dark);
+}
+
+.usp h2 {
+    font-weight: 500;
+    color: var(--gold-dark)
+}
+
+.usp h2, .usp p {
+    font-size: 15px;
+}
+
+.goldOverlap {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background: var(--gold-dark);
+    top: -50px;
+    right: 50px;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.151);
+    padding: 30px;
+    color: white;
+}
+
+.goldOverlap h1 {
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.goldOverlap a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.goldOverlap .goldOverlap--cta {
+    margin-top: 65px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Our Projects */
+.ourProjects--ctn {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.ourProjects--ctn h1 {
+    color: var(--gold-dark);
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.ourprojects--img {
+    width: 100%;
+    display: flex;
+    padding: 50px 250px;
+}
+
+.op_img {
+    width: 25%;
+    overflow: hidden;
+    transition: all linear .5s;
+}
+
+.op_img:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.151);
+    transition: all linear .5s;
+}
+
+.op_img img {
+    width: 100%;
+}
+
+.op_seeMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(193, 193, 193);
+}
+
+
+
+
+/* Contact Us */
+.contactUs--ctn {
+    width: 100%;
+    display: flex;
+    padding: 50px 250px;
+}
+
+.contactUs--text {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contactUs--text-ctn h1 {
+    color: var(--gold-dark);
+    font-weight: 200;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.contactUs--text-ctn p {
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+.contactUs--text-ctn .callUsForConsultation {
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: var(--gold-dark);
+}
+
+.contactUs--text-ctn h2 {
+    font-size: 30px;
+    color: var(--gold-dark);
+}
+
+
+
+.contactUs--Form {
+    width: 50%;
+    background: white;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.151);
+    padding: 30px;
+}
+
+.formInputs {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.formInputs div {
+    padding: 10px;
+}
+
+.formInput {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.textarea {
+    padding: 10px;
+}
+
+.textarea textarea {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.submit {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    background: var(--gold-dark);
+}
+
+.submit:hover{
+    background-color: var(--gold-darker);
+}
+
+
+
+
+/* QUOTE */
+.quote {
+    width: 100%;
+    padding: 0;
+    margin-top: 150px;
+    position: relative;
+}
+
+.quote img {
+    width: 100%;
+}
+
+.quoteOverlap {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background: var(--gold-dark);
+    top: 270px;
+    left: 320px;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.151);
+    padding: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.quoteOverlap h1 {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+
+
+/* LAST CTA */
+.lastCTA {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.lastCTA h1 {
+    color: var(--gold-dark);
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    margin-top: 150px;
+    padding: 50px 250px;
+    background: linear-gradient(to right, rgb(22, 22, 22), rgb(44, 44, 44));
+    color: white;
+}
+
+.footer-topSession {
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+}
+
+.footer-about {
+    padding: 30px 50px;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 15px;
+}
+
+.footer-nav {
+    padding: 30px 50px;
+}
+
+.footer-nav ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials {
+    padding: 30px 50px;
+}
+
+
+.footer-bottomSession {
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+}
+
+.footer-bottomSession i {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.f-phone, .f-location, .f-email {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.f-phone, .f-email {
+    background: rgb(50, 50, 50);
+}
+
+.f-location {
+    background: rgb(60, 60, 60);
+}
+
+.f-texts h1 {
+    padding-bottom: 0;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.copy {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.copy p {
+    font-size: 10px;
+    color: var(--grey);
+}
