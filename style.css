@@ -423,8 +423,11 @@ nav ul li a:hover {
 }
 
 @media (max-width: 580px) {
-    .ourprojects--img { display: grid;
+    .ourprojects--img {
+        display: grid;
         grid-template-columns: repeat(1, 100%);
+        padding: 50px 50px;
+
     }
     .ourProjects--ctn h1 {
         font-size: 30px;
