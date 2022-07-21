@@ -395,6 +395,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     background: rgb(193, 193, 193);
+    cursor: pointer;
 }
 
 
@@ -428,6 +429,13 @@ nav ul li a:hover {
     .ourProjects--ctn h1 {
         font-size: 30px;
     }
+
+    .op_seeMore {
+        height: 40px;
+        background: var(--gold-dark);
+        color: white;
+    }
+    
 }
 
 
