@@ -420,3 +420,130 @@ nav ul li a:hover {
         font-size: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    margin-top: 150px;
+    padding: 50px 250px;
+    background: linear-gradient(to right, rgb(22, 22, 22), rgb(44, 44, 44));
+    color: white;
+}
+
+.footer-topSession {
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+}
+
+.footer-about {
+    padding: 30px 50px;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 15px;
+}
+
+.footer-nav {
+    padding: 30px 50px;
+}
+
+.footer-nav ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials {
+    padding: 30px 50px;
+}
+
+
+.footer-bottomSession {
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+}
+
+.footer-bottomSession i {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.f-phone, .f-location, .f-email {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.f-phone, .f-email {
+    background: rgb(50, 50, 50);
+}
+
+.f-location {
+    background: rgb(60, 60, 60);
+}
+
+.f-texts h1 {
+    padding-bottom: 0;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.copy {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.copy p {
+    font-size: 10px;
+    color: var(--grey);
+}
+
+
+@media (max-width: 1280px) {
+    footer {
+        padding: 50px 150px;
+    }
+}
+
+@media (max-width: 1150px) {
+    footer {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 1135px) {
+    footer {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-topSession {
+        grid-template-columns: repeat(1,100%);
+    }
+
+    .footer-bottomSession {
+        grid-template-columns: repeat(1,100%);
+    }
+}
