@@ -87,7 +87,7 @@ nav ul li a:hover {
     height: 20vh;
     color: white;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     /* border: 1px solid red; */
 }
@@ -97,6 +97,12 @@ nav ul li a:hover {
     font-weight: 200;
     line-height: 1;
     margin-bottom: 15px;
+}
+
+.bannerText p {
+    margin-top: 30px;
+    padding: 30px;
+    line-height: 2;
 }
 
 @media (max-width: 1010px) {
@@ -260,5 +266,157 @@ nav ul li a:hover {
 @media (max-width: 565px) {
     .gallery {
         grid-template-columns: repeat(1,100%);
+    }
+}
+
+
+
+/* Contact Us */
+.contactUs--ctn {
+    width: 100%;
+    display: flex;
+    padding: 50px 250px;
+}
+
+.contactUs--text {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contactUs--text-ctn h1 {
+    color: var(--gold-dark);
+    font-weight: 200;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.contactUs--text-ctn p {
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+.contactUs--text-ctn .callUsForConsultation {
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: var(--gold-dark);
+}
+
+.contactUs--text-ctn h2 {
+    font-size: 30px;
+    color: var(--gold-dark);
+}
+
+
+
+.contactUs--Form {
+    width: 50%;
+    background: white;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.151);
+    padding: 30px;
+}
+
+.formInputs {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.formInputs div {
+    padding: 10px;
+}
+
+.formInput {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.textarea {
+    padding: 10px;
+}
+
+.textarea textarea {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.submit {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    background: var(--gold-dark);
+}
+
+.submit:hover{
+    background-color: var(--gold-darker);
+}
+
+
+@media (max-width: 1280px) {
+    .contactUs--ctn {
+        padding: 50px 150px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .contactUs--ctn {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contactUs--ctn {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        place-items: center;
+    }
+
+    .contactUs--text {
+        width: 100%;
+    }
+
+    .contactUs--Form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 970px) {
+    .contactUs--ctn {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contactUs--ctn {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 630px) {
+    .contactUs--ctn {
+        padding: 50px 50px;
+    }
+
+    .formInputs {
+        grid-template-columns: repeat(1,100%);
+    }
+
+    .contactUs--text-ctn h1 {
+        font-size: 30px;
+    }
+
+    .contactUs--text-ctn h2 {
+        font-size: 20px;
     }
 }
